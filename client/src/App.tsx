@@ -8,7 +8,7 @@ import Payments from "./components/Organisms/DashboardSections/Cliente/Content/P
 import { loginGoogle } from "./App/Action/Action";
 import { useAppDispatch } from "./App/Hooks/Hooks";
 import jwt_decode from "jwt-decode";
-import Contraseña from "./components/Molecules/Contraseña/Constraseña";
+import Contraseña from "./components/Molecules/Contrase/Constrase";
 
 function App() {
     const cookies = new Cookies();
