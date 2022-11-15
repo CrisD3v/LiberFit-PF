@@ -133,18 +133,6 @@ const LoginForm = () => {
                                 <div className="border-2 w-14 border-redClare inline-block mb-2"></div>
                             </div>
                             <div className="flex justify-center my-2">
-                                {/* <div className="border-2 w-min border-red-300 rounded-full p-3 mx-1">
-                  <FaFacebookF className="text-sm" />
-                </div>
-                <div className="border-2 w-min border-red-300 rounded-full p-3 mx-1">
-                  <FaLinkedinIn className="text-sm" />
-                </div> */}
-                                {/* <div className="flex border-2 w-min border-red-300 rounded-full p-3 mx-1">
-                  <button className="flex justify-around items-center">
-                    <FaGoogle className="text-lg" />
-                    <span>oogle</span>
-                  </button>
-                </div> */}
                 <div className="flex border-2 w-min border-red-300 rounded-full p-3 mx-1 hover:bg-redClare hover:text-white">
                   <button onClick={() => loginAuth0()}>
                     Google
@@ -205,7 +193,7 @@ const LoginForm = () => {
                     <p>tu password no puede tener espacio</p>
                   )}
                 </div>
-                  <Link to="" className="text-xs p-2">
+                  <Link to="/recuperacion" className="text-base p-2">
                     ¿Se te olvido tu contraseña?
                   </Link>
                 <div className="flex">

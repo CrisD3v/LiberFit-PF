@@ -4,14 +4,16 @@ import { getClients, getEmployees, getLocations, getTrainings, deleteClient } fr
 import { useAppSelector, useAppDispatch } from "../../../App/Hooks/Hooks";
 import Avatar from "react-avatar";
 import { useNavigate } from "react-router-dom";
+import Cookies from "universal-cookie";
 
 export default function Table({ link }: any) {
     const allData: any = useAppSelector((state) => state.data);
     const dispatch = useAppDispatch();
+    const cookie = new Cookies()
 
     useEffect(() => {
-        dispatch(getClients())
-        dispatch(getEmployees())
+        dispatch(getClients({tooken: cookie.get("token")}))
+        dispatch(getEmployees({tooken: cookie.get("token")}))
     }, []);
 
     const handleDeleteUser = (e: any, id :any) => {

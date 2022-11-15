@@ -70,21 +70,6 @@ function SideBar({ handle, setName, dashboard }: Props) {
                   )
             }
           })
-        // if (confirm("Seguro que quieres cerrar sesion?")) {
-        //     cookies.remove("id", { path: "/" });
-        //     cookies.remove("email", { path: "/" });
-        //     cookies.remove("name", { path: "/" });
-        //     cookies.remove("phone", { path: "/" });
-        //     cookies.remove("image", { path: "/" });
-        //     cookies.remove("RolId", { path: "/" });
-        //     cookies.remove("token",{path:"/"})
-            
-        //     if (cookies.get("loginWith") === "local") {
-        //         dispatch(cerrarLogin());
-        //         navigate("/home");
-        //     } else logout();
-        //     cookies.remove("loginWith", { path: "/" });
-        // };
     }
 
     const client = [
